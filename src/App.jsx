@@ -1,11 +1,11 @@
 import './App.css';
-import LOGO from './assets/LOGO.png'; 
+import logo from './assets/LOGO.png'; 
 function App() {
   return (
     <div className="App">
       <header className="main-header">
         <div className="logo-container">
-          <img src={LOGO} alt="Logo CD" />
+          <img src={logo} alt="Logo CD" />
         </div>
         <h1>Carlos Manuel De La O Arce</h1>
         <p>Desarrollador de Software | FullStack</p>

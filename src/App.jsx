@@ -57,7 +57,7 @@ function App() {
               <li><strong>Correo:</strong> cmdelaoa@gmail.com</li>
               <li><strong>WhatsApp:</strong> 8489-1066</li>
               <li><strong>GitHub:</strong> <a href="https://github.com/CarlosDeLaOA" target="_blank">CarlosDeLaOA</a></li>
-              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/carlos-de-la-o-arce-5a1178279/" target="_blank">Perfil</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/carlos-de-la-o-arce-5a1178279/" target="_blank">Carlos De La O Arce</a></li>
             </ul>
           </div>
         </section>

@@ -66,8 +66,9 @@ function App() {
   <div className="card cv-buttons">
     <p>Puedes descargar mi currículum en tu idioma preferido:</p>
     <div className="cv-button-group">
-      <a href="https://carlosdelaoa.github.io/CarlosDeLaOArcePortfolio/cv-esp.pdf" download className="cv-btn">📄 CV Español</a>
-<a href="https://carlosdelaoa.github.io/CarlosDeLaOArcePortfolio/cv-eng.pdf" download className="cv-btn">📄 CV Inglés</a>
+      <a href="https://carlosdelaoa.github.io/CarlosDeLaOArcePortfolio/cv-esp.pdf" target="_blank" rel="noopener noreferrer" className="cv-btn">📄 CV Español</a>
+      <a href="https://carlosdelaoa.github.io/CarlosDeLaOArcePortfolio/cv-eng.pdf" target="_blank" rel="noopener noreferrer" className="cv-btn">📄 CV Ingles</a>
+
 
 
     </div>

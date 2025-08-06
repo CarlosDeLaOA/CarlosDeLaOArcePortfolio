@@ -117,10 +117,15 @@ body {
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  min-width: 180px;
+  text-align: center;
 }
 
 .cv-btn:hover {
   background-color: #b96b2c;
+  transform: scale(1.03);
 }

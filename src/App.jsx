@@ -61,6 +61,18 @@ function App() {
             </ul>
           </div>
         </section>
+        <section className="section">
+  <h2>Currículum</h2>
+  <div className="card cv-buttons">
+    <p>Puedes descargar mi currículum en tu idioma preferido:</p>
+    <div className="cv-button-group">
+      <a href="/cv-esp.pdf" download className="cv-btn">📄 CV Español</a>
+<a href="/cv-eng.pdf" download className="cv-btn">📄 CV Inglés</a>
+
+    </div>
+  </div>
+</section>
+
       </main>
     </div>
   );

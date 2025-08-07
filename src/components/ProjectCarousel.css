@@ -1,0 +1,93 @@
+.carousel-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+
+.carousel-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1b2c49;
+}
+
+.carousel-description {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #334;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-button {
+  background: white;
+  border: 2px solid #a22b4e;
+  color: #a22b4e;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.carousel-cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+.project-image {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0 0;
+  font-weight: bold;
+}
+
+.project-card p {
+  margin: 0.2rem 0 1rem;
+  color: #555;
+}
+
+.open-button {
+  background-color: #a22b4e;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.carousel-dots {
+  margin-top: 1rem;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #555;
+}

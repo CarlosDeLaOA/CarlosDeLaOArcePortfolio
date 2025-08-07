@@ -1,9 +1,34 @@
 import './App.css';
-import logo from './assets/LOGO.png'; 
+import logo from './assets/LOGO.png';
+import scrollIcon from './assets/scroll-icon.png';
+import ProjectCarousel from "./components/ProjectCarousel.jsx";
+
+
+
+
+
 function App() {
   return (
     <div className="App">
-      <header className="main-header">
+      {/* NAVBAR */}
+      <nav className="navbar">
+        <div className="navbar-left">
+          <img src={logo} alt="Logo" className="navbar-logo" />
+        </div>
+        <ul className="navbar-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre">Sobre mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div className="language-toggle">
+          <button className="lang-btn">ES / EN</button>
+        </div>
+      </nav>
+
+      {/* HEADER */}
+      <header id="inicio" className="main-header">
         <div className="logo-container">
           <img src={logo} alt="Logo CD" />
         </div>
@@ -12,8 +37,18 @@ function App() {
         <p className="slogan">Desarrollo con impacto.</p>
       </header>
 
+      {/* SCROLL TO TOP */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className="scroll-top"
+        title="Ir arriba"
+      >
+        <img src={scrollIcon} alt="Ir arriba" />
+      </button>
+
+      {/* CONTENIDO PRINCIPAL */}
       <main className="content">
-        <section className="section">
+        <section id="sobre" className="section">
           <h2>Sobre Mí</h2>
           <div className="card">
             <h3>Presentación Personal</h3>
@@ -30,27 +65,54 @@ function App() {
           </div>
         </section>
 
-        <section className="section alt">
-          <h2>Misión, Visión y Valores</h2>
+        <section id="habilidades" className="section">
+          <h2>Habilidades</h2>
           <div className="card">
-            <h3>Misión</h3>
-            <p>
-              Crear soluciones tecnológicas funcionales, accesibles y sostenibles que contribuyan al crecimiento de las empresas y al bienestar de los usuarios.
-            </p>
-            <h3>Visión</h3>
-            <p>
-              Destacar por la calidad y compromiso en cada proyecto, liderando desarrollos innovadores que generen impacto positivo.
-            </p>
-            <h3>Valores</h3>
             <ul>
-              <li><strong>Responsabilidad:</strong> Cumplo con mis compromisos y obligaciones con seriedad y disciplina.</li>
-              <li><strong>Paciencia:</strong> Afronto los retos del desarrollo con calma, entendiendo que los errores son parte del aprendizaje.</li>
-              <li><strong>Solidaridad:</strong> Promuevo un ambiente de trabajo cooperativo y respetuoso.</li>
+              <li>Lenguajes: JavaScript, C#, Java, C++</li>
+              <li>Frontend: React, HTML5, CSS3, Bootstrap</li>
+              <li>Backend: Node.js, SQL Server</li>
+              <li>Herramientas: Power BI, Git, GitHub</li>
+              <li>Blandas: Resolución de problemas, trabajo en equipo, adaptabilidad</li>
             </ul>
           </div>
         </section>
+       
+        <section className="section" id="proyectos">
+  <h2>Proyectos</h2>
+  <div className="card">
+    <ProjectCarousel />
+  </div>
+</section>
+
 
         <section className="section">
+          <h2>Currículum</h2>
+          <div className="card cv-buttons">
+            <p>Puedes descargar mi currículum en tu idioma preferido:</p>
+            <div className="cv-button-group">
+              <a
+                href="https://carlosdelaoa.github.io/CarlosDeLaOArcePortfolio/cv-esp.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cv-btn"
+              >
+                📄 <strong style={{ color: "white" }}>CV Español</strong>
+              </a>
+
+              <a
+                href="https://carlosdelaoa.github.io/CarlosDeLaOArcePortfolio/cv-eng.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cv-btn"
+              >
+                📄 <strong style={{ color: "white" }}>CV Inglés</strong>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="contacto" className="section">
           <h2>Contacto</h2>
           <div className="card">
             <ul>
@@ -61,38 +123,10 @@ function App() {
             </ul>
           </div>
         </section>
-        <section className="section">
-  <h2>Currículum</h2>
-  <div className="card cv-buttons">
-    <p>Puedes descargar mi currículum en tu idioma preferido:</p>
-    <div className="cv-button-group">
-<a
-  href="https://carlosdelaoa.github.io/CarlosDeLaOArcePortfolio/cv-esp.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="cv-btn"
->
-  📄 Descargar CV Español
-</a>
 
-<a
-  href="https://carlosdelaoa.github.io/CarlosDeLaOArcePortfolio/cv-eng.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="cv-btn"
->
-  📄 Descargar CV Inglés
-</a>
-
-
-
-    </div>
-  </div>
-</section>
-
+        
       </main>
     </div>
   );
 }
-
 export default App;

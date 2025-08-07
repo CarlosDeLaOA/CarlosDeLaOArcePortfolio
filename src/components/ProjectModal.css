@@ -1,0 +1,43 @@
+.descripcion {
+  color: black !important; /* Azul secundario */
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.modal-btn{
+     background-color: #10497E; /* Azul secundario */
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+}
+.repo-btn {
+  background-color: #10497E; /* Azul secundario */
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  background-color: #f28c28; /* Naranja */
+  color: white;
+}
+
+.repo-btn:hover {
+  background-color: #f28c28;       /* Fondo blanco */
+  color: white;                /* Letra naranja */
+  border: 2px solid #f28c28;     /* Borde naranja opcional */
+}

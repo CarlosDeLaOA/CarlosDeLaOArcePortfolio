@@ -2,6 +2,7 @@ import './App.css';
 import logo from './assets/LOGO.png';
 import scrollIcon from './assets/scroll-icon.png';
 import ProjectCarousel from "./components/ProjectCarousel.jsx";
+import ContactForm from './components/ContactForm';
 
 
 
@@ -121,6 +122,10 @@ function App() {
               <li><strong>GitHub:</strong> <a href="https://github.com/CarlosDeLaOA" target="_blank">CarlosDeLaOA</a></li>
               <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/carlos-de-la-o-arce-5a1178279/" target="_blank">Carlos De La O Arce</a></li>
             </ul>
+            <section id="contacto" className="section">
+  <ContactForm />
+</section>
+
           </div>
         </section>
 

@@ -10,13 +10,13 @@ function ProjectCarousel() {
       image: project1,
     },
     {
-      title: "GoHealth",
+      title: "Sistema de Gestión de Multas",
       desc: "descripcion",
       image: project2,
     },
     {
       title: "GoHealth",
-      desc: "descripcion",
+      desc: "descripcion",  
       image: project2,
     },
   ];

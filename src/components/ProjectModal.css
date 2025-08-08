@@ -32,12 +32,12 @@
 }
 
 .modal-btn:hover {
-  background-color: #f28c28; /* Naranja */
+  background-color: #f28c28; 
   color: white;
 }
 
 .repo-btn:hover {
-  background-color: #f28c28;       /* Fondo blanco */
-  color: white;                /* Letra naranja */
-  border: 2px solid #f28c28;     /* Borde naranja opcional */
+  background-color: #f28c28;      
+  color: white;                
+  border: 2px solid #f28c28;     
 }

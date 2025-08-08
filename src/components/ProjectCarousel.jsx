@@ -72,10 +72,15 @@ function ProjectCarousel() {
             <div key={i} className="project-card">
               <img src={p.image} alt={p.title} className="project-img" />
               <h3>{p.title}</h3>
-              <p>{p.desc}</p>
-              <button className="project-btn" onClick={() => setSelectedProject(p)}>
-                Abrir
-              </button>
+              
+              <a
+              href={p.repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-btn"
+            >
+             GitHub
+            </a>
             </div>
           ))}
         </div>

@@ -4,13 +4,13 @@ import logo from './assets/LOGO.png';
 import scrollIcon from './assets/scroll-icon.png';
 import ProjectCarousel from './components/ProjectCarousel';
 import ContactForm from './components/ContactForm';
+import Skills from "./components/Skills";
 
 function App() {
   const [idioma, setIdioma] = useState('es');
 
   const textos = {
     es: {
-      inicio: "Inicio",
       sobre: "Sobre mí",
       habilidades1: "Habilidades",
       proyectos: "Proyectos",
@@ -19,8 +19,8 @@ function App() {
       subtitulo: "Desarrollador de Software | FullStack",
       slogan: "Desarrollo con impacto.",
       sobreTitulo: "Sobre Mí",
-      presentacion: "Presentación Personal",
-      descripcion: "Desarrollador de software en constante búsqueda de nuevas tecnologías y metodologías para continuar mi crecimiento profesional y aportar de manera significativa a proyectos innovadores. Apasionado por la programación y la resolución de problemas. Me interesa especialmente el desarrollo web y de sistemas, tanto en frontend como backend. He trabajado con tecnologías como C#, JavaScript, React y SQL, y también tengo experiencia con herramientas para el análisis de datos. Me considero una persona autodidacta, que siempre está buscando aprender nuevas tecnologías y metodologías para seguir creciendo profesionalmente.",
+      descripcion: "Desarrollador de software en constante búsqueda de nuevas tecnologías y metodologías para continuar mi crecimiento profesional y aportar de manera significativa a proyectos innovadores. Apasionado por la programación y la resolución de problemas. Me interesa especialmente el desarrollo web y de sistemas, tanto en frontend como backend. He trabajado con tecnologías como C#, JavaScript, React y SQL, y también tengo experiencia con herramientas para el análisis de datos. Me considero una persona autodidacta, que siempre está buscando aprender nuevas tecnologías y metodologías para seguir creciendo profesionalmente. Soy disciplinado, comprometido con el aprendizaje constante, y capaz de mantener un rendimiento óptimo incluso bajo presión. Mi objetivo es contribuir al éxito de la organización aplicando mis conocimientos para desarrollar resultados de alta calidad, al mismo tiempo que busco crecer profesionalmente.",
+      descripcion2: "Soy disciplinado, comprometido con el aprendizaje constante, y capaz de mantener un rendimiento óptimo incluso bajo presión. Mi objetivo es contribuir al éxito de la organización aplicando mis conocimientos para desarrollar resultados de alta calidad, al mismo tiempo que busco crecer profesionalmente.",
       habilidades: [
         "Lenguajes: JavaScript, C#, Java, C++",
         "Frontend: React, HTML5, CSS3, Bootstrap",
@@ -37,7 +37,6 @@ function App() {
       ]
     },
     en: {
-      inicio: "Home",
       sobre: "About",
       habilidades1: "Skills",
       proyectos: "Projects",
@@ -46,8 +45,8 @@ function App() {
       subtitulo: "Software Developer | FullStack",
       slogan: "Development with impact.",
       sobreTitulo: "About Me",
-      presentacion: "Personal Introduction",
       descripcion: "Software developer constantly seeking new technologies and methodologies to continue my professional growth and make a meaningful contribution to innovative projects. Passionate about programming and problem-solving. I am particularly interested in web and system development, both frontend and backend. I have worked with technologies such as C#, JavaScript, React, and SQL, and I also have experience with data analysis tools. I consider myself a self-taught individual, always looking to learn new technologies and methodologies to continue growing professionally.",
+      descripcion2: "I am disciplined, committed to continuous learning, and capable of maintaining optimal performance even under pressure. My goal is to contribute to the success of the organization by applying my knowledge to develop high-quality results, while also seeking to grow professionally.",
       habilidades: [
         "Languages: JavaScript, C#, Java, C++",
         "Frontend: React, HTML5, CSS3, Bootstrap",
@@ -74,7 +73,6 @@ function App() {
           <img src={logo} alt="Logo" className="navbar-logo" />
         </div>
         <ul className="navbar-links">
-          <li><a href="#inicio">{t.inicio}</a></li>
           <li><a href="#sobre">{t.sobre}</a></li>
           <li><a href="#habilidades">{t.habilidades1}</a></li>
           <li><a href="#proyectos">{t.proyectos}</a></li>
@@ -95,7 +93,27 @@ function App() {
         <p>{t.subtitulo}</p>
         <p className="slogan">{t.slogan}</p>
       </header>
+    
+              <div className="cv-button-group">
+    <a
+      href="https://carlosdelaoa.github.io/CarlosDeLaOArcePortfolio/cv-esp.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="cv-btn"
+    >
+       <strong style={{ color: "white" }}>Curriculum Vitae</strong>
+    </a>
 
+    <a
+      href="https://carlosdelaoa.github.io/CarlosDeLaOArcePortfolio/cv-eng.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="cv-btn"
+    >
+       <strong style={{ color: "white" }}>Resume</strong>
+    </a>
+  </div>
+            
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="scroll-top"
@@ -110,6 +128,7 @@ function App() {
           <div className="card">
             <h3>{t.presentacion}</h3>
             <p>{t.descripcion}</p>
+            <p>{t.descripcion2}</p>
             <h3>{t.perfil}</h3>
             <p>{t.perfilDescripcion}</p>
           </div>
@@ -117,13 +136,7 @@ function App() {
 
         <section id="habilidades" className="section">
           <h2>{t.habilidades1}</h2>
-          <div className="card">
-            <ul>
-              {t.habilidades.map((hab, idx) => (
-                <li key={idx}>{hab}</li>
-              ))}
-            </ul>
-          </div>
+          <Skills />
         </section>
 
         <section id="proyectos" className="section">

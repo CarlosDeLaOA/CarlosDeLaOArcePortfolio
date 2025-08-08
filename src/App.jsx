@@ -32,8 +32,8 @@ function App() {
       contactoTitulo: "Contacto",
       contactoDatos: [
         { label: "WhatsApp", link: "https://wa.me/84891066", text: "WhatsApp" },
-        { label: "GitHub", link: "https://github.com/CarlosDeLaOA", text: "CarlosDeLaOA" },
-        { label: "LinkedIn", link: "https://www.linkedin.com/in/carlos-de-la-o-arce-5a1178279/", text: "Carlos De La O Arce" }
+        { label: "GitHub", link: "https://github.com/CarlosDeLaOA", text: "GitHub" },
+        { label: "LinkedIn", link: "https://www.linkedin.com/in/carlos-de-la-o-arce-5a1178279/", text: "LinkedIn" }
       ]
     },
     en: {
@@ -58,8 +58,8 @@ function App() {
       contactoTitulo: "Contact",
       contactoDatos: [
         { label: "WhatsApp", link: "https://wa.me/84891066", text: "WhatsApp" },
-        { label: "GitHub", link: "https://github.com/CarlosDeLaOA", text: "CarlosDeLaOA" },
-        { label: "LinkedIn", link: "https://www.linkedin.com/in/carlos-de-la-o-arce-5a1178279/", text: "Carlos De La O Arce" }
+        { label: "GitHub", link: "https://github.com/CarlosDeLaOA", text: "GitHUB" },
+        { label: "LinkedIn", link: "https://www.linkedin.com/in/carlos-de-la-o-arce-5a1178279/", text: "LinkedIn" }
       ]
     }
   };
@@ -149,15 +149,23 @@ function App() {
         <section id="contacto" className="section">
           <h2>{t.contactoTitulo}</h2>
           <div className="card">
-            <ul>
-              {t.contactoDatos.map((item, index) => (
-                <li key={index}>
-                  <strong>{item.label}:</strong>{' '}
-                  <a href={item.link} target="_blank" rel="noopener noreferrer">{item.text}</a>
-                </li>
-              ))}
-            </ul>
-            <ContactForm />
+            <div className="contact-buttons">
+              
+  {t.contactoDatos.map((item, index) => (
+    <a
+      key={index}
+      href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="contact-btn"
+    >
+      {item.text}
+    </a>
+  ))}
+</div>
+
+            <ContactForm idioma={idioma} />
+
           </div>
         </section>
       </main>

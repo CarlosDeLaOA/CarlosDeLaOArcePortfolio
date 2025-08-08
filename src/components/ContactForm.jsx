@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import './ContactForm.css';
 import SuccessModal from './SuccessModal';
 
-function ContactForm() {
+function ContactForm({ idioma }) {
   const form = useRef();
   const [showModal, setShowModal] = useState(false);
 
@@ -16,39 +16,57 @@ function ContactForm() {
       form.current,
       '1KqzkfzbJSmoUuCnl'
     ).then(() => {
-        setShowModal(true);
-        form.current.reset();
-
-        setTimeout(() => setShowModal(false), 4000);
-      }, (error) => {
-        alert('Error al enviar: ' + error.text);
-      });
+      setShowModal(true);
+      form.current.reset();
+      setTimeout(() => setShowModal(false), 4000);
+    }, (error) => {
+      alert('Error al enviar: ' + error.text);
+    });
   };
+
+  const textos = {
+    es: {
+      nombre: "Nombre",
+      correo: "Correo Electrónico",
+      mensaje: "Mensaje",
+      enviar: "Enviar",
+      enviado: "¡Mensaje enviado con éxito!"
+    },
+    en: {
+      nombre: "Name",
+      correo: "Email",
+      mensaje: "Message",
+      enviar: "Send",
+      enviado: "Message sent successfully!"
+    }
+  };
+
+  const t = textos[idioma] || textos.es;
 
   return (
     <>
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="form-group">
-          <label htmlFor="name">Nombre</label>
+          <label htmlFor="name">{t.nombre}</label>
           <input type="text" id="name" name="name" required />
         </div>
 
         <div className="form-group">
-          <label htmlFor="email">Correo Electrónico</label>
+          <label htmlFor="email">{t.correo}</label>
           <input type="email" id="email" name="email" required />
         </div>
 
         <div className="form-group">
-          <label htmlFor="message">Mensaje</label>
+          <label htmlFor="message">{t.mensaje}</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
 
-        <button type="submit" className="submit-btn">Enviar</button>
+        <button type="submit" className="submit-btn">{t.enviar}</button>
       </form>
 
       {showModal && (
         <SuccessModal
-          message="¡Mensaje enviado con éxito!"
+          message={t.enviado}
           onClose={() => setShowModal(false)}
         />
       )}

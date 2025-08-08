@@ -206,7 +206,7 @@ img, video {
   transition: background-color 0.3s, transform 0.2s;
 }
 .cv-btn:hover {
-  background-color: #b96b2c;
+  background-color: #bdd5ea;
   transform: scale(1.03);
 }
 
@@ -235,7 +235,7 @@ img, video {
 }
 .submit-btn {
   align-self: flex-start;
-  background-color: #003366;
+  background-color: #10497E;
   color: white;
   border: none;
   padding: 0.6rem 1.2rem;
@@ -269,6 +269,30 @@ img, video {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-btn {
+  background-color: #10497E;
+  color: white !important;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #D38346;
+}
+
 
 /* ==== RESPONSIVE (móvil) ==== */
 /* NAVBAR RESPONSIVE FIX */

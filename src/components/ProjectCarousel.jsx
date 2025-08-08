@@ -5,6 +5,7 @@ import ProjectModal from './ProjectModal';
 import project1 from '../assets/proyecto1.png';
 import project2 from '../assets/proyecto2.png';
 import project3 from '../assets/Dimsa.png';
+import project4 from '../assets/GreenMarketLogo.png';
 
 function ProjectCarousel() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -37,7 +38,7 @@ function ProjectCarousel() {
       title: "GreenMarket",
       desc: "Versión mejorada",
       fullDescription: "Interfaz mejorada con nuevas funciones para historial clínico y UX optimizada.",
-      image: project1,
+      image: project4,
       repo: "https://github.com/MCalvoE/PersonalSandBox"
     }
   ];

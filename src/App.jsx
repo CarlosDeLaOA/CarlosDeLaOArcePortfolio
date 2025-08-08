@@ -20,9 +20,7 @@ function App() {
       slogan: "Desarrollo con impacto.",
       sobreTitulo: "Sobre Mí",
       presentacion: "Presentación Personal",
-      descripcion: "Soy un profesional apasionado por el desarrollo de software, actualmente cursando la carrera de Ingeniería en Software. Me interesa especialmente el desarrollo web y de sistemas, tanto en frontend como backend. He trabajado con tecnologías como C#, JavaScript, React y SQL, y también tengo experiencia con herramientas para el análisis de datos. Me considero una persona autodidacta, que siempre está buscando aprender nuevas tecnologías y metodologías para seguir creciendo profesionalmente.",
-      perfil: "Perfil Profesional",
-      perfilDescripcion: "Desarrollador de software en constante búsqueda de nuevas tecnologías y metodologías para continuar mi crecimiento profesional y aportar de manera significativa a proyectos innovadores. Apasionado por la programación y la resolución de problemas, cuento con habilidades en JavaScript, C#, C++, Java, CSS, HTML, Power BI y SQL Server, además de una sólida experiencia en el desarrollo de aplicaciones web.",
+      descripcion: "Desarrollador de software en constante búsqueda de nuevas tecnologías y metodologías para continuar mi crecimiento profesional y aportar de manera significativa a proyectos innovadores. Apasionado por la programación y la resolución de problemas. Me interesa especialmente el desarrollo web y de sistemas, tanto en frontend como backend. He trabajado con tecnologías como C#, JavaScript, React y SQL, y también tengo experiencia con herramientas para el análisis de datos. Me considero una persona autodidacta, que siempre está buscando aprender nuevas tecnologías y metodologías para seguir creciendo profesionalmente.",
       habilidades: [
         "Lenguajes: JavaScript, C#, Java, C++",
         "Frontend: React, HTML5, CSS3, Bootstrap",
@@ -49,9 +47,7 @@ function App() {
       slogan: "Development with impact.",
       sobreTitulo: "About Me",
       presentacion: "Personal Introduction",
-      descripcion: "I am a professional passionate about software development, currently pursuing a degree in Software Engineering. I am particularly interested in web and system development, both frontend and backend. I have worked with technologies such as C#, JavaScript, React, and SQL, and I also have experience with data analysis tools. I consider myself a self-taught individual, always looking to learn new technologies and methodologies to continue growing professionally.",
-      perfil: "Professional Profile",
-      perfilDescripcion: "Software developer constantly seeking new technologies and methodologies to continue my professional growth and contribute meaningfully to innovative projects. Passionate about programming and problem-solving, I possess skills in JavaScript, C#, C++, Java, CSS, HTML, Power BI, and SQL Server, along with solid experience in web application development.",
+      descripcion: "Software developer constantly seeking new technologies and methodologies to continue my professional growth and make a meaningful contribution to innovative projects. Passionate about programming and problem-solving. I am particularly interested in web and system development, both frontend and backend. I have worked with technologies such as C#, JavaScript, React, and SQL, and I also have experience with data analysis tools. I consider myself a self-taught individual, always looking to learn new technologies and methodologies to continue growing professionally.",
       habilidades: [
         "Languages: JavaScript, C#, Java, C++",
         "Frontend: React, HTML5, CSS3, Bootstrap",

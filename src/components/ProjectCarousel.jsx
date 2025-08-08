@@ -65,7 +65,7 @@ function ProjectCarousel() {
   return (
     <>
       <div className="carousel-multi">
-        <button className="nav-arrow" onClick={() => handleNav('prev')}>◀</button>
+        <button className="nav-arrow" onClick={() => handleNav('prev')}>‹</button>
 
         <div className={`card-wrapper ${fade ? 'fade-in' : 'fade-out'}`}>
           {visibleProjects.map((p, i) => (
@@ -80,7 +80,7 @@ function ProjectCarousel() {
           ))}
         </div>
 
-        <button className="nav-arrow" onClick={() => handleNav('next')}>▶</button>
+        <button className="nav-arrow" onClick={() => handleNav('next')}>›</button>
       </div>
 
       {selectedProject && (

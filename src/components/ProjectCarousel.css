@@ -6,7 +6,7 @@
 }
 
 .nav-arrow {
-  background-color: #003366;
+  background-color: #f28c28;
   color: white;
   font-size: 1.5rem;
   border: none;
@@ -17,7 +17,7 @@
 }
 
 .nav-arrow:hover {
-  background-color: #f28c28;
+  background-color: #BDD5EA;
 }
 
 .card-wrapper {
@@ -40,7 +40,7 @@
 
 .project-card:hover {
   transform: translateY(-5px);
-  border-color: #f28c28;
+  border-color: #BDD5EA;
 }
 
 .project-img {

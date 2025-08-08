@@ -13,7 +13,7 @@
 .form-group label {
   font-weight: bold;
   margin-bottom: 0.3rem;
-  color: #003366; /* Azul secundario */
+  color: #003366; 
 }
 
 .form-group input,
@@ -27,7 +27,7 @@
 }
 
 .submit-btn {
-  background-color: #003366; /* Azul secundario */
+  background-color: #003366; 
   color: white;
   padding: 0.6rem 1.2rem;
   border: none;
@@ -38,10 +38,9 @@
 }
 
 .submit-btn:hover {
-  background-color: #f28c28; /* Naranja */
+  background-color: #f28c28; 
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .form-group input,
   .form-group textarea {

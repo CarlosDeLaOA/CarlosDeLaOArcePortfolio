@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6); /* fondo oscuro transparente */
+  background-color: rgba(0, 0, 0, 0.6); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,7 @@
 }
 
 .success-content {
-  background-color: white; /* fondo blanco */
+  background-color: white; 
   border-radius: 16px;
   padding: 2rem;
   text-align: center;

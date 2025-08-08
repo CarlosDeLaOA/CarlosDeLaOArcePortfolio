@@ -1,12 +1,33 @@
-# React + Vite
+# 🌐 Portafolio Web - Carlos Manuel De La O Arce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Descripción
 
-Currently, two official plugins are available:
+Este es mi portafolio web personal, desarrollado con **React** y **CSS**, con soporte para **cambio dinámico de idioma (ES / EN)**.  
+Aquí presento mis habilidades, proyectos destacados y un formulario de contacto funcional con integración a **EmailJS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El objetivo principal de este proyecto es ofrecer una plataforma moderna, limpia y profesional para que posibles empleadores, clientes o colaboradores puedan conocerme y contactar conmigo de manera directa.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Características
+
+- **Navbar adaptable** con opción de idioma ES / EN.
+- **Sección de habilidades** con visualización en formato de iconos.
+- **Carrusel de proyectos** con navegación por flechas.
+- **Botones directos** a GitHub para cada proyecto.
+- **Formulario de contacto funcional** con EmailJS.
+- **Modal de éxito animado** con LottieFiles al enviar un mensaje.
+- **Botón scroll-to-top** para fácil navegación.
+- **Footer informativo** adaptado a cada idioma.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **React.js**
+- **JavaScript**
+- **EmailJS** (envío de correos )
+- **Lottie React** (animaciones)
+
+
+

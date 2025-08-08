@@ -5,6 +5,8 @@ import scrollIcon from './assets/scroll-icon.png';
 import ProjectCarousel from './components/ProjectCarousel';
 import ContactForm from './components/ContactForm';
 import Skills from "./components/Skills";
+import Footer from "./components/Footer";
+
 
 function App() {
   const [idioma, setIdioma] = useState('es');
@@ -34,7 +36,12 @@ function App() {
         { label: "WhatsApp", link: "https://wa.me/84891066", text: "WhatsApp" },
         { label: "GitHub", link: "https://github.com/CarlosDeLaOA", text: "GitHub" },
         { label: "LinkedIn", link: "https://www.linkedin.com/in/carlos-de-la-o-arce-5a1178279/", text: "LinkedIn" }
-      ]
+      ],
+      footer: {
+  rights: "Todos los derechos reservados.",
+  madeBy: "Hecho Carlos Manuel De La O Arce"
+}
+
     },
     en: {
       sobre: "About",
@@ -60,7 +67,12 @@ function App() {
         { label: "WhatsApp", link: "https://wa.me/84891066", text: "WhatsApp" },
         { label: "GitHub", link: "https://github.com/CarlosDeLaOA", text: "GitHUB" },
         { label: "LinkedIn", link: "https://www.linkedin.com/in/carlos-de-la-o-arce-5a1178279/", text: "LinkedIn" }
-      ]
+      ],
+      footer: {
+  rights: "All rights reserved.",
+  madeBy: "Made  by Carlos Manuel De La O Arce"
+}
+
     }
   };
 
@@ -169,7 +181,11 @@ function App() {
           </div>
         </section>
       </main>
+      <Footer t={t} />
+
+
     </div>
+    
   );
 }
 

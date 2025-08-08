@@ -4,64 +4,82 @@ import ProjectModal from './ProjectModal';
 
 import project1 from '../assets/proyecto1.png';
 import project2 from '../assets/proyecto2.png';
+import project3 from '../assets/Dimsa.png';
 
 function ProjectCarousel() {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [startIndex, setStartIndex] = useState(0);
+  const [fade, setFade] = useState(true);
 
   const projects = [
     {
       title: "GoHealth",
-      desc: "descripcion",
-      fullDescription: "Plataforma para gestión médica de pediatría. Permite agendar citas, ver historial de pacientes, y recibir notificaciones automáticas.",
+      desc: "Gestión médica y agendamiento",
+      fullDescription: "Plataforma para agendar citas, ver historial de pacientes y recibir notificaciones automáticas.",
       image: project1,
-      repo: "https://github.com/CarlosDeLaOA/gohealth-project"
+      repo: "https://github.com/camillaquiros/Proyecto-Componentes"
     },
     {
-      title: "Sistema de Gestión de Multas",
-      desc: "descripcion",
-      fullDescription: "Sistema web para consultar, pagar y apelar multas de tránsito. Incluye conexión con pagos en línea y autenticación segura.",
+      title: "Gestión de Multas",
+      desc: "Consulta y pago de multas",
+      fullDescription: "Permite consultar, pagar y apelar multas de tránsito con conexión a pagos en línea.",
       image: project2,
-      repo: "https://github.com/CarlosDeLaOA/multas-gestion"
-    },
-    {
-      title: "adasdasdsd",
-      desc: "descripcion",
-      fullDescription: "Otra versión del sistema médico con enfoque en interfaz amigable y manejo de historial clínico.",
-      image: project2,
-      repo: "https://github.com/CarlosDeLaOA/gohealth-v2"
+      repo: "https://github.com/Alexlop175Cenfotec/Proyecto2_3C_2024"
     },
     {
       title: "Dashboard Dimsa",
-      desc: "descripcion",
-      fullDescription: "Otra versión del sistema médico con enfoque en interfaz amigable y manejo de historial clínico.",
-      image: project2,
+      desc: "Panel interactivo",
+      fullDescription: "Dashboard moderno para métricas empresariales.",
+      image: project3,
       repo: "https://github.com/CarlosDeLaOA/gohealth-v2"
     },
     {
-      title: "GoHealth",
-      desc: "descripcion",
-      fullDescription: "Otra versión del sistema médico con enfoque en interfaz amigable y manejo de historial clínico.",
-      image: project2,
-      repo: "https://github.com/CarlosDeLaOA/gohealth-v2"
+      title: "GreenMarket",
+      desc: "Versión mejorada",
+      fullDescription: "Interfaz mejorada con nuevas funciones para historial clínico y UX optimizada.",
+      image: project1,
+      repo: "https://github.com/MCalvoE/PersonalSandBox"
     }
+  ];
+
+  const handleNav = (direction) => {
+    setFade(false);
+    setTimeout(() => {
+      setStartIndex((prev) => {
+        const step = 1;
+        const total = projects.length;
+        return direction === 'next'
+          ? (prev + step) % total
+          : (prev - step + total) % total;
+      });
+      setFade(true);
+    }, 150);
+  };
+
+  const visibleProjects = [
+    projects[startIndex],
+    projects[(startIndex + 1) % projects.length]
   ];
 
   return (
     <>
-      <div className="carousel-container">
-        {projects.map((p, index) => (
-          <div key={index} className="project-card">
-            <img src={p.image} alt={p.title} className="project-img" />
-            <h3>{p.title}</h3>
-            <p>{p.desc}</p>
-            <button
-              className="project-btn"
-              onClick={() => setSelectedProject(p)}
-            >
-              Abrir
-            </button>
-          </div>
-        ))}
+      <div className="carousel-multi">
+        <button className="nav-arrow" onClick={() => handleNav('prev')}>◀</button>
+
+        <div className={`card-wrapper ${fade ? 'fade-in' : 'fade-out'}`}>
+          {visibleProjects.map((p, i) => (
+            <div key={i} className="project-card">
+              <img src={p.image} alt={p.title} className="project-img" />
+              <h3>{p.title}</h3>
+              <p>{p.desc}</p>
+              <button className="project-btn" onClick={() => setSelectedProject(p)}>
+                Abrir
+              </button>
+            </div>
+          ))}
+        </div>
+
+        <button className="nav-arrow" onClick={() => handleNav('next')}>▶</button>
       </div>
 
       {selectedProject && (

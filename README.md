@@ -1,6 +1,6 @@
-# 🌐 Portafolio Web - Carlos Manuel De La O Arce
+#  Portafolio Web - Carlos Manuel De La O Arce
 
-## 📌 Descripción
+##  Descripción
 
 Este es mi portafolio web personal, desarrollado con **React** y **CSS**, con soporte para **cambio dinámico de idioma (ES / EN)**.  
 Aquí presento mis habilidades, proyectos destacados y un formulario de contacto funcional con integración a **EmailJS**.
@@ -9,7 +9,7 @@ El objetivo principal de este proyecto es ofrecer una plataforma moderna, limpia
 
 ---
 
-## 🚀 Características
+##  Características
 
 - **Navbar adaptable** con opción de idioma ES / EN.
 - **Sección de habilidades** con visualización en formato de iconos.
@@ -22,7 +22,7 @@ El objetivo principal de este proyecto es ofrecer una plataforma moderna, limpia
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 - **React.js**
 - **JavaScript**
